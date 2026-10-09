@@ -1,0 +1,13 @@
+room,building,capacity,equipment,availability
+A101,Block A,60,Projector|Smart Board|AC,Available
+A102,Block A,80,Projector|Computer|AC,Available
+A201,Block A,120,Projector|Smart Board|Microphone|AC,Booked
+B201,Block B,40,Projector|AC,Available
+B202,Block B,75,Projector|Smart Board|AC,Available
+B204,Block B,60,Smart Board|AC,Available
+C101,Block C,100,Projector|Microphone|AC,Available
+C103,Block C,50,Projector|Computer|AC,Available
+C201,Block C,120,Projector|Smart Board|Microphone|AC,Available
+D101,Block D,150,Projector|Smart Board|Microphone|Computer|AC,Available
+D105,Block D,70,Computer|AC,Available
+E201,Block E,90,Projector|Smart Board|AC,Booked

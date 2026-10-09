@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CampusFlow AI | Smart Campus Operations</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+  <nav class="side" aria-label="Main navigation">
+    <div class="brand"><span class="mark" aria-hidden="true">CF</span><div><b>CampusFlow AI</b><small>Campus operations intelligence</small></div></div>
+    <div id="navlinks"></div>
+    <div class="roleBox">
+      <label for="role">Demo role</label>
+      <select id="role"><option value="student">Student</option><option value="faculty">Faculty</option><option value="maintenance">Maintenance</option><option value="admin">Administrator</option></select>
+      <small>Local demo roles only. This is <b>not</b> real authentication.</small>
+    </div>
+  </nav>
+  <div class="content">
+    <header class="top"><div id="crumb" class="crumb"></div><div class="status"><span id="health" class="pill">checking API...</span><button class="btn ghost" id="refreshBtn" title="Reload data from the backend">Refresh</button></div></header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+</div>
+<div id="toasts" aria-live="polite" role="status"></div>
+<div id="drawer" class="drawer" hidden role="dialog" aria-modal="true" aria-label="Ticket detail"><div class="drawerIn"><button class="btn ghost close" id="drawerClose" aria-label="Close">Close</button><div id="drawerBody"></div></div></div>
+<script src="/app.js"></script>
+</body>
+</html>

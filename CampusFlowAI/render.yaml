@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: campusflow-ai
+    runtime: python
+    plan: starter
+    buildCommand: "python -m compileall -q campusflow run.py"
+    startCommand: "python run.py --host 0.0.0.0 --port $PORT"
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: CAMPUSFLOW_DB
+        value: /var/data/campusflow.db
+    disk:
+      name: campusflow-data
+      mountPath: /var/data
+      sizeGB: 1

@@ -1,0 +1,2 @@
+# CampusFlow AI uses ONLY the Python standard library (sqlite3, http.server, json, unittest).
+# There is nothing to pip install. Python 3.9+ is required (developed and tested on 3.12).
