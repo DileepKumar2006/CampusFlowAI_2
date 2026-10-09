@@ -1,5 +1,5 @@
 """HTTP server (stdlib). REST API under /api plus static frontend. Local prototype only."""
-import json, logging, mimetypes, re, sys, threading
+import json, logging, mimetypes, os, re, sys, threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
